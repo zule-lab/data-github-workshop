@@ -176,6 +176,10 @@ Principles:
 
 ## Committing
 
+-   GitHub tracks the changes you make to your repository on your computer
+
+-   After making changes, you have to select, describe, and *commit* them
+
 ## Pushing
 
 ## Pulling (Collaboration Station)
