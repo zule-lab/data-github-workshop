@@ -141,19 +141,19 @@ Best practices include (but are not limited to) [^2]
 
 [^3]: [Data Carpentry Data Analysis & Visualiation in R for Ecologists](https://datacarpentry.org/R-ecology-lesson/00-before-we-start.html)
 
-## Cleaning Data in R 
+## Cleaning Data in R
 
 There are some tasks that do not need to be "as reproducible" (e.g., fixing typos) - these can be done in OpenRefine.
 
 In general if you are:
 
--   combining data sources
+-   Combining data sources
 
--   making decisions about the data itself (e.g., removing or adding data)
+-   Making decisions about the data itself (e.g., removing or adding data)
 
--   performing calculations
+-   Performing calculations
 
--   renaming things
+-   Renaming things
 
 Do this in R (you will be grateful later!)
 
@@ -174,7 +174,26 @@ Principles:
 
 # Part IV: GitHub (Again)
 
+## Committing
+
+## Pushing
+
+## Pulling (Collaboration Station)
+
 # Part V: Archiving Data
+
+## Lab Archiving
+
+Archiving your project in the lab requires 4 things:
+
+1.  Paper/thesis
+2.  Clean data
+3.  Metadata
+4.  Code
+
+These things can be organized however you'd like, as long as they are easily understood by someone after you are gone.
+
+Projects need to be added to the lab computer, under the D: drive, in the Lab_Alumni folder
 
 ## Why Using Git is not Archiving
 
@@ -186,7 +205,45 @@ Principles:
 
 -   Can import GitHub repository to a true data archive
 
+## Public Archiving
+
+-   Zenodo is a great option for archiving data
+
+    -   Easily links to GitHub repositories
+
+    -   Preserves file structures
+
+    -   Can be updated after reviews/changes with a new DOI
+
+    -   FREE
+
+-   Other options include Dryad, figshare, and more topic-specific archives (e.g., GenBank)
+
+-   As always, use what works for you
+
 ## Zenodo
+
+To connect and archive your code/data with Zenodo from GitHub, there are three main steps
+
+1.  Link your GitHub to your Zenodo account, and toggle "On" for your repository
+2.  Make a release of the project on GitHub
+3.  Obtain DOI and project page from Zenodo
+
+(see an example workthrough [here](https://emilio-berti.github.io/idiv-git-introduction/21-github_zenodo/index.html))
+
+NOTE: you do not need to use Git to use Zenodo, you can also upload local files
+
+## The Ultimate Combo Deal {.scrollable}
+
+::: columns
+::: column
+![](presentation_imgs/gitrepo.png)
+:::
+
+::: column
+![](presentation_imgs/zenodorepo.png)
+:::
+:::
 
 ## Resources
 

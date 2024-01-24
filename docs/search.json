@@ -102,7 +102,7 @@
     "href": "index.html#cleaning-data-in-r-1",
     "title": "ZULE’s Data & GitHub Crash Course",
     "section": "Cleaning Data in R",
-    "text": "Cleaning Data in R\nThere are some tasks that do not need to be “as reproducible” (e.g., fixing typos) - these can be done in OpenRefine.\nIn general if you are:\n\ncombining data sources\nmaking decisions about the data itself (e.g., removing or adding data)\nperforming calculations\nrenaming things\n\nDo this in R (you will be grateful later!)"
+    "text": "Cleaning Data in R\nThere are some tasks that do not need to be “as reproducible” (e.g., fixing typos) - these can be done in OpenRefine.\nIn general if you are:\n\nCombining data sources\nMaking decisions about the data itself (e.g., removing or adding data)\nPerforming calculations\nRenaming things\n\nDo this in R (you will be grateful later!)"
   },
   {
     "objectID": "index.html#tidy-or-clean-data",
@@ -119,6 +119,13 @@
     "text": "Basic File Structure"
   },
   {
+    "objectID": "index.html#lab-archiving",
+    "href": "index.html#lab-archiving",
+    "title": "ZULE’s Data & GitHub Crash Course",
+    "section": "Lab Archiving",
+    "text": "Lab Archiving\nArchiving your project in the lab requires 4 things:\n\nPaper/thesis\nClean data\nMetadata\nCode\n\nThese things can be organized however you’d like, as long as they are easily understood by someone after you are gone.\nProjects need to be added to the lab computer, under the D: drive, in the Lab_Alumni folder"
+  },
+  {
     "objectID": "index.html#why-using-git-is-not-archiving",
     "href": "index.html#why-using-git-is-not-archiving",
     "title": "ZULE’s Data & GitHub Crash Course",
@@ -126,11 +133,25 @@
     "text": "Why Using Git is not Archiving\n\nDoes not have a DOI, so does not point to a specific moment in time\nCan be changed continuously\nNot dedicated to longevity\nCan import GitHub repository to a true data archive"
   },
   {
+    "objectID": "index.html#public-archiving",
+    "href": "index.html#public-archiving",
+    "title": "ZULE’s Data & GitHub Crash Course",
+    "section": "Public Archiving",
+    "text": "Public Archiving\n\nZenodo is a great option for archiving data\n\nEasily links to GitHub repositories\nPreserves file structures\nCan be updated after reviews/changes with a new DOI\nFREE\n\nOther options include Dryad, figshare, and more topic-specific archives (e.g., GenBank)\nAs always, use what works for you"
+  },
+  {
     "objectID": "index.html#zenodo",
     "href": "index.html#zenodo",
     "title": "ZULE’s Data & GitHub Crash Course",
     "section": "Zenodo",
-    "text": "Zenodo"
+    "text": "Zenodo\nTo connect and archive your code/data with Zenodo from GitHub, there are three main steps\n\nLink your GitHub to your Zenodo account, and toggle “On” for your repository\nMake a release of the project on GitHub\nObtain DOI and project page from Zenodo\n\n(see an example workthrough here)\nNOTE: you do not need to use Git to use Zenodo, you can also upload local files"
+  },
+  {
+    "objectID": "index.html#the-ultimate-combo-deal",
+    "href": "index.html#the-ultimate-combo-deal",
+    "title": "ZULE’s Data & GitHub Crash Course",
+    "section": "The Ultimate Combo Deal",
+    "text": "The Ultimate Combo Deal"
   },
   {
     "objectID": "index.html#resources",
