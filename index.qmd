@@ -188,7 +188,13 @@ Principles:
 
 After committing, you push your changes to your remote repository
 
+![](presentation_imgs/push.png)
+
 ## Pulling (Collaboration Station)
+
+-   If you are collaborating on a project, where multiple people are contributing, make sure you pull from the remote repository **before** starting your work
+
+-    Same button as push (ctrl + shift + P)
 
 # Part V: Archiving Data
 

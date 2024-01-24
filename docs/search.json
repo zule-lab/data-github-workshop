@@ -123,21 +123,28 @@
     "href": "index.html#committing",
     "title": "ZULE’s Data & GitHub Crash Course",
     "section": "Committing",
-    "text": "Committing\n\n\n\n\n\n\n\n\n\nGitHub tracks the changes you make to your repository on your computer\nAfter making changes, you have to select, describe, and commit them"
+    "text": "Committing\n\nGitHub tracks the changes you make to your repository on your computer\nAfter making changes, you have to select, describe, and commit them"
+  },
+  {
+    "objectID": "index.html#committing-1",
+    "href": "index.html#committing-1",
+    "title": "ZULE’s Data & GitHub Crash Course",
+    "section": "Committing",
+    "text": "Committing"
   },
   {
     "objectID": "index.html#pushing",
     "href": "index.html#pushing",
     "title": "ZULE’s Data & GitHub Crash Course",
     "section": "Pushing",
-    "text": "Pushing"
+    "text": "Pushing\nAfter committing, you push your changes to your remote repository"
   },
   {
     "objectID": "index.html#pulling-collaboration-station",
     "href": "index.html#pulling-collaboration-station",
     "title": "ZULE’s Data & GitHub Crash Course",
     "section": "Pulling (Collaboration Station)",
-    "text": "Pulling (Collaboration Station)"
+    "text": "Pulling (Collaboration Station)\n\nIf you are collaborating on a project, where multiple people are contributing, make sure you pull from the remote repository before starting your work\nSame button as push (ctrl + shift + P)"
   },
   {
     "objectID": "index.html#lab-archiving",
