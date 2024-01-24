@@ -1,7 +1,7 @@
 ---
-title: "ZULE's Project Starter Kit"
+title: "ZULE's Data & GitHub Crash Course"
 author: "Isabella Richmond & Kayleigh Hutt-Taylor"
-date: October 24, 2022
+date: January 30, 2024
 format: 
   revealjs:
     theme: dark
@@ -18,7 +18,7 @@ My goal for this workshop is to give everyone the tools to:
 -   Confidently start a project in R
 -   Manage files in a way that is reproducible and easy to understand
 -   Allow people to document progress on their projects
--   Know what they want to learn more about/ask me about in the coming months
+-   Know one approach to publicly archiving projects
 :::
 
 ## 
@@ -39,41 +39,19 @@ https://sciencecomputing.io/
 
 -   If you have technical issues throughout this presentation - raise your hand and we will either work through together or Kayleigh will help you troubleshoot
 
-## Project Workflow (yours can be different!)
+## Project Workflow with Git
 
-::: {layout="[[-1], [1], [-1]]"}
-```{dot}
-//| fig-width: 10
-//| fig-align: center
+![[biost\@ts Git Tutorial](https://biostats-r.github.io/biostats/github/1_Git_Tutorial.html)](https://biostats-r.github.io/biostats/github/Pics/gittutorial/0_workflow_git.png){fig-align="center"}
 
-digraph G {
-    
-    bgcolor="transparent"
-    node [style=filled,color=white]
-    edge [color="lightblue"]
-    
-    rankdir=RL
+## Project Workflow with Git + Others
 
-    
-    clone [shape=box]
-    data_cleaning [shape=box]
-    commit [shape=box]
-    push [shape=box]
-    
-
-    GitHub_Repo -> clone;
-    clone -> Local_Repo;
-    Local_Repo -> RStudio_Project;
-    RStudio_Project -> data_cleaning;
-    data_cleaning -> commit;
-    commit -> push;
-    push -> GitHub_Repo;
-
-}
-```
-:::
+![[biost\@ts Git Tutorial](https://biostats-r.github.io/biostats/github/1_Git_Tutorial.html)](https://biostats-r.github.io/biostats/github/Pics/gittutorial/22_workflow2.png){fig-align="center"}
 
 # Part II: GitHub
+
+## GitHub & Version Control
+
+![[Piled Higher and Deeper](https://phdcomics.com/comics/archive.php?comicid=1531)](http://www.phdcomics.com/comics/archive/phd101212s.gif){fig-align="center"}
 
 ## GitHub & Version Control
 
@@ -114,19 +92,13 @@ digraph G {
 [ZULE's GitHub](https://github.com/zule-lab) has lots of repositories (including examples) if you are looking for inspiration for folder organization, ReadMe documentation, metadata, etc.
 :::
 
-## Cloning (perfect for spooky season)
+## Cloning
 
-::: {layout-ncol="2"}
-![](presentation_imgs/cloning1.JPG)
+<div>
 
 ![](presentation_imgs/cloning2.png)
-:::
 
-## Your Turn!
-
-Let's all try to make a repository on GitHub and clone it to our local computers
-
-![](presentation_imgs/myturn.gif)
+</div>
 
 # Part III: R & RStudio
 
@@ -134,7 +106,7 @@ Let's all try to make a repository on GitHub and clone it to our local computers
 
 Good file structure is important because it [^1]
 
-[^1]:  [Software Carpentry Project Management](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro/index.html)
+[^1]: [Software Carpentry Project Management](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro/index.html)
 
 ::: incremental
 -   Ensures the integrity of your data
@@ -147,7 +119,7 @@ Good file structure is important because it [^1]
 
 Best practices include (but are not limited to) [^2]
 
-[^2]:  [Software Carpentry Project Management](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro/index.html)
+[^2]: [Software Carpentry Project Management](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro/index.html)
 
 ::: incremental
 -   Use an R Project file so that your project is easily shareable
@@ -156,29 +128,6 @@ Best practices include (but are not limited to) [^2]
 -   Treat output as disposable - you should always be able to re-generate with script
 -   Have separate function and figure scripts
 :::
-
-## Basic File Structure
-
-![](presentation_imgs/filestructure.png)
-
-## Your Turn!
-
-Let's all set up a project in the repository that we created in the last section
-
-![](presentation_imgs/myturn.gif)
-
-# Part IV: Clean Data
-
-## ["Tidy" Data](https://www.jstatsoft.org/article/view/v059i10):
-
--   Framework for how data should be formatted for easy and efficient data cleaning created by [Hadley Wickham](http://hadley.nz/)
-    -   Underpinnings of `tidyverse` packages (e.g. ggplot2)
-
-Principles:
-
-1.  Each variable forms a column
-2.  Each observation forms a row
-3.  Each type of observational unit forms a table
 
 ## Cleaning Data in R
 
@@ -190,197 +139,70 @@ Principles:
 -   Scales with datasets
 -   Steep learning curve with a high payoff
 
-[^3]:  [Data Carpentry Data Analysis & Visualiation in R for Ecologists](https://datacarpentry.org/R-ecology-lesson/00-before-we-start.html)
+[^3]: [Data Carpentry Data Analysis & Visualiation in R for Ecologists](https://datacarpentry.org/R-ecology-lesson/00-before-we-start.html)
 
-## Your Turn! (if we have time)
+## Cleaning Data in R 
 
-Let's do some data cleaning! This code was written for a previous ZULE [workshop](https://github.com/zule-lab/data-cleaning-workshop)
+There are some tasks that do not need to be "as reproducible" (e.g., fixing typos) - these can be done in OpenRefine.
 
--   Download dataset from [here](https://github.com/zule-lab/data-cleaning-workshop/tree/main/example) and put it in the `input/` folder you made earlier
+In general if you are:
 
--   **NOTE:** we only have code for `tidyverse` cleaning in this presentation, but the previous [workshop](https://github.com/zule-lab/data-cleaning-workshop) also goes through all these steps using `data.table`
+-   combining data sources
 
-## Reading Data
+-   making decisions about the data itself (e.g., removing or adding data)
 
-```{r, echo = T, eval = F}
-# This is all the code chunks used throughout the workshop, feel free to copy and paste them from here if it makes it easier to follow along 
+-   performing calculations
 
-#### Loading packages -----------------------------------------
-p <- c("tidyverse", "anytime")
-lapply(p, library, character.only = T)
+-   renaming things
 
+Do this in R (you will be grateful later!)
 
-#### 1. Import data and investigate ---------------------------
-# NOTE: this code is functioning on the assumption that you have a project set-up as per the slides provided
+## ["Tidy" (or clean) Data](https://www.jstatsoft.org/article/view/v059i10):
 
-# initial import using tidyverse 
-tdf <- read_csv("workshop_materials/input/example-data.csv")
+-   Framework for how data should be formatted for easy and efficient data cleaning created by [Hadley Wickham](http://hadley.nz/)
+    -   Underpinnings of `tidyverse` packages (e.g. ggplot2)
 
-# when we investigate we see that both imports have some problems
-# read_csv doesn't recognize that the file is delimited using ";" instead of ",". Let's use read_delim to fix that and add it to the data.table argument 
-tdf <- read_delim("input/example-data.csv", delim = ";")
+Principles:
 
-# that's slightly better, but we still have the problem that the first 7 lines in tidyverse and first 8 lines in data.table need to be removed for this to be functional 
-tdf <- read_delim("input/example-data.csv", delim = ";", skip = 8)
+1.  Each variable forms a column
+2.  Each observation forms a row
+3.  Each type of observational unit forms a table
 
-# adding the skip argument fixes our problems! Now we can move on to other formatting issues... 
-```
+## Basic File Structure
 
-## Special Characters
+![](presentation_imgs/filestructure.png)
 
-```{r, echo = T, eval = F}
-#### 2. Special Characters & UTF-8 encoding ---------------------
-# What would life in Québec be without special characters! When we investigate our tidyverse dataframe, we see an issue with "Montréal" 
-# This issue often arises with accents and other special characters, when the dataframe is not properly read as UTF-8
-# Luckily, we have an easy fix for this! 
-# tidyverse can be re-encoded after import 
-tdf$City <- enc2utf8(as(tdf$City, "character"))
-```
+# Part IV: GitHub (Again)
 
-## NAs & Associated Values
+# Part V: Archiving Data
 
-```{r, echo = T, eval = F}
-#### 3. NAs & associated values ---------------------------------
-# there are often NAs in our datasets, which we may or may not want to keep 
-# often, there are also other values that count, biologically, as NAs but are not read into R automatically as NAs 
-# for example, blanks, "NA" (instead of a true NA), zeroes (for some variables), etc.
-# NAs can be addressed when importing data, or after 
+## Why Using Git is not Archiving
 
-# After importing 
-tdf$DBH <- na_if(tdf$DBH, 0) # tidyverse
+-   Does not have a DOI, so does not point to a specific moment in time
 
-# Drop the NAs (we don't want them, but you might in your analysis)
-tdf <- drop_na(tdf) # tidyverse
-```
+-   Can be changed continuously
 
-## Duplicates
+-   Not dedicated to longevity
 
-```{r, echo = T, eval = F}
-#### 4. Duplicates ----------------------------------------------
-# sometimes, there are duplicate observations/rows in datasets. These can really mess up your analysis if you don't catch them
-# testing your dataset for duplicates and then removing what you find is an important step in data cleaning! 
-# investigate which lines are duplicates
-tdup <- tdf[duplicated(tdf), c("TreeID", "City", "DBH", "Species,")]
-# tidyverse remove duplicates
-tdf <- distinct(tdf)
+-   Can import GitHub repository to a true data archive
 
-```
+## Zenodo
 
-## Column Names
+## Resources
 
-```{r, echo = T, eval = F}
-#### 5. Column Names --------------------------------------------
-# bad column names can make your life a living hell. Before moving into analysis make sure your column names follow best practices 
-# you'll thank me later! You don't want numbers, special characters, or spaces in your column names. Let's change our really bad column names 
-# tidyverse 
-tdf <- rename(tdf, 
-              Date = "1st Date Measured",
-              Time = "Time  Measured", 
-              Species = "Species,")
-
-```
-
-## Value Formatting
-
-```{r, echo = T, eval = F}
-#### 6. Value Formatting ---------------------------------------
-## Spelling mistakes 
-# in our dataset, Toronto is spelled wrong. If you have a huge dataset with many spelling errors, OpenRefine is a great tool to use
-# for us, our dataset is small and we can visually inspect it for spelling errors so we will replace the error in R 
-tdf$City <- recode(tdf$City, Toronno = "Toronto")
-
-## Formatting column types 
-# city and species are currently formatted as character types, but for our study we want them to act as factors - we need to reclassify them 
-# its always important to check the classes of your data, R makes assumptions when importing your data and can be wrong! 
-tdf$City <- as_factor(tdf$City)
-tdf$Species <- as_factor(tdf$Species)
-
-## Text parsing
-# we have a comma at the end of our species names, that we don't really want 
-# we can use text parsing to remove those unwanted commas from the Species column
-# tidyverse 
-tdf$Species <- str_remove(tdf$Species, "[,]") # this will remove a comma anywhere in the column
-```
-
-## Date/Time Formatting
-
-```{r, echo = T, eval = F}
-#### 7. Date/Time Formatting -----------------------------------
-# date and time formatting in R can be really tricky and frustrating sometimes but is often really necessary for field data (and other data)
-# anytime is a cool package that makes the process a little bit easier 
-# first we want a date-time column, not separate entities 
-tdf <- unite(tdf, "DateTime", Date:Time, sep = " ")
-
-# now use anytime to format the columns
-# NOTE: Be careful of time zones, anytime will automatically set to where you are 
-# if you are using data from other time zones and need to indicate that, use the parsedate package
-tdf$DateTime <- anytime(tdf$DateTime)
-
-```
-
-## Reshaping
-
-```{r, echo = T, eval = F}
-#### 8. Reshaping ----------------------------------------------
-# often the way datasets are initially set up are not ideal for things like plotting and modelling
-# so we need to reshape the dataframe - make it longer or wider - so we can do what we need to do
-# let's make the dataframe wider - we only want one entry per city 
-tdf_wide <- pivot_wider(tdf, names_from = Species, values_from = DBH)
-
-# Hmmmmm that is not the most useful format - let's make it longer again (or melt it)
-tdf_long <- pivot_longer(tdf_wide, cols = 4:14, names_to = "Species", values_to = "DBH", values_drop_na = T)
-```
-
-## Saving & Exporting
-
-```{r, echo = T, eval = F}
-#### 9. Saving/Exporting Data ----------------------------------
-# don't forget to save your beautiful, cleaned data!
-# maybe you have a "cleaned" folder in your input directory, save it there
-# if this is a final product, save it to output 
-# if this is an intermediate item, the best way to save it is as an .rds file 
-# if this is a final product or something you will be sharing, save it as a .csv
-saveRDS(tdf, "output/TidyData.rds")
-write_csv(tdf, "output/TidyData.csv")
-```
-
-## BONUS: Piping
-
-```{r, echo = T, eval = F}
-#### BONUS: Piping ---------------------------------------------
-# you may be wondering why tidyverse has so many seemingly redundant functions with baseR
-# the tidyverse allows you to do something called piping (%>%), which can make your code much more efficient 
-# for example, if we took all the tidyverse code from above and piped it together, it would look like this: 
-tdf <- read_delim("input/example-data.csv", delim = ";", skip = 8)
-tdf$City <- enc2utf8(as(tdf$City, "character"))
-
-tdf <- tdf %>%
-  na_if(0) %>%
-  drop_na() %>%
-  distinct() %>%
-  rename(Date = "1st Date Measured",
-         Time = "Time  Measured", 
-         Species = "Species,") %>%
-  mutate(City = recode(City, Toronno = "Toronto")) %>% 
-  mutate(City = as_factor(City)) %>%
-  mutate(Species = as_factor(Species)) %>%
-  mutate(Species = str_remove(Species, "[,]")) %>%
-  unite("DateTime", Date:Time, sep = " ") %>%
-  mutate(DateTime = anytime(DateTime)) %>% 
-  pivot_wider(names_from = Species, values_from = DBH) %>%
-  pivot_longer(cols = 4:14, names_to = "Species", values_to = "DBH", values_drop_na = T) %>%
-  write_csv("output/TidyData.csv")
-```
-
-# Part V: Resources
-
-## 
-
-**This workshop - including examples & code can all be found [here](https://github.com/zule-lab/project-starter-workshop) and formatted slides are [here](https://zule-lab.github.io/project-starter-workshop/)**
+**This workshop - including examples & code can all be found [here](https://github.com/zule-lab/data-github-workshop) and formatted slides are [here](https://zule-lab.github.io/data-github-workshop)**
 
 Software Carpentry: [R for Reproducible Scientific Analysis](https://swcarpentry.github.io/r-novice-gapminder/) & [Version Control with git](https://swcarpentry.github.io/git-novice/)
 
 Data Carpentry: [Data Analysis & Visualization in R for Ecologists](https://datacarpentry.org/R-ecology-lesson/index.html) & [Data Organization in Spreadsheets for Ecologists](https://datacarpentry.org/R-ecology-lesson/index.html)
+
+biost\@ts: [Version Control with Git and GitHub](https://biostats-r.github.io/biostats/github/)
+
+Happy Git: [happygitwithr](https://happygitwithr.com/)
+
+University of Bergen: [Open Access to Research Data](https://www.uib.no/en/ub/111372/open-access-research-data#metadata-describe-your-data)
+
+## Resources
 
 Smart People I Know: [Dr. Christie Bahlai's Reproducible Quantitative Methods Course](https://cbahlai.github.io/rqm-template/) & [Wildlife Ecology & Evolution Lab's Guide by Alec Robitaille](https://weel.gitlab.io/guide/) & [Val Lucet's Git Workshop](https://vlucet.github.io/git-and-github-with-r-workshop/)
 
