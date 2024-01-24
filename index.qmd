@@ -180,7 +180,13 @@ Principles:
 
 -   After making changes, you have to select, describe, and *commit* them
 
+## Committing
+
+![](presentation_imgs/commit.png){fig-align="center"}
+
 ## Pushing
+
+After committing, you push your changes to your remote repository
 
 ## Pulling (Collaboration Station)
 

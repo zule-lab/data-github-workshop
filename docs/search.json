@@ -119,6 +119,27 @@
     "text": "Basic File Structure"
   },
   {
+    "objectID": "index.html#committing",
+    "href": "index.html#committing",
+    "title": "ZULE’s Data & GitHub Crash Course",
+    "section": "Committing",
+    "text": "Committing\n\n\n\n\n\n\n\n\n\nGitHub tracks the changes you make to your repository on your computer\nAfter making changes, you have to select, describe, and commit them"
+  },
+  {
+    "objectID": "index.html#pushing",
+    "href": "index.html#pushing",
+    "title": "ZULE’s Data & GitHub Crash Course",
+    "section": "Pushing",
+    "text": "Pushing"
+  },
+  {
+    "objectID": "index.html#pulling-collaboration-station",
+    "href": "index.html#pulling-collaboration-station",
+    "title": "ZULE’s Data & GitHub Crash Course",
+    "section": "Pulling (Collaboration Station)",
+    "text": "Pulling (Collaboration Station)"
+  },
+  {
     "objectID": "index.html#lab-archiving",
     "href": "index.html#lab-archiving",
     "title": "ZULE’s Data & GitHub Crash Course",
