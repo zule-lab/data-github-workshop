@@ -17,7 +17,7 @@ My goal for this workshop is to give everyone the tools to:
 ::: incremental
 -   Confidently start a project in R
 -   Manage files in a way that is reproducible and easy to understand
--   Allow people to document progress on their projects
+-   Allow people to document history/progress on their projects
 -   Know one approach to publicly archiving projects
 :::
 
@@ -39,68 +39,23 @@ https://sciencecomputing.io/
 
 -   If you have technical issues throughout this presentation - raise your hand and we will either work through together or Kayleigh will help you troubleshoot
 
-## Project Workflow with Git
+## Transparent Workflows
 
-![[biost\@ts Git Tutorial](https://biostats-r.github.io/biostats/github/1_Git_Tutorial.html)](https://biostats-r.github.io/biostats/github/Pics/gittutorial/0_workflow_git.png){fig-align="center"}
+-   Ensuring that your workflow is transparent is important for:
 
-## Project Workflow with Git + Others
+    -   Past/Current/Future You
 
-![[biost\@ts Git Tutorial](https://biostats-r.github.io/biostats/github/1_Git_Tutorial.html)](https://biostats-r.github.io/biostats/github/Pics/gittutorial/22_workflow2.png){fig-align="center"}
+    -   ZULE Lab
 
-# Part II: GitHub
+    -   Collaborators
 
-## GitHub & Version Control
+    -   Other grad students
 
-![[Piled Higher and Deeper](https://phdcomics.com/comics/archive.php?comicid=1531)](http://www.phdcomics.com/comics/archive/phd101212s.gif){fig-align="center"}
+    -   Scientific Community
 
-## GitHub & Version Control
+    -   **PUBLIC**
 
-::: incremental
--   GitHub is a website-software that documents your progress on a project and allows you to do *version control*
-
-    -   aka it takes snapshots of your progress across time so nothing gets lost
-
--   If you save rough drafts of your writing as you go along - that is version control
-
--   Really useful for when you want to go back/change your mind/re-run a test/etc.
-
--   Facilitates peace of mind + reproducible science + collaboration/sharing
-:::
-
-## The Basics of GitHub
-
--   5 basic jargon terms you need to know to use GitHub:
-    -   Repository/repo: your project
-    -   Clone: make a local copy of your project
-    -   Commit: describe and commit to any changes you've made
-    -   Push: send your changes to your online repo
-    -   Pull: incorporate any changes to your local repo
-    -   (BONUS branch: a side project)
--   *We will do all these things today!*
-
-## Let's Make a Project!
-
-[github.com](www.github.com)
-
-![](presentation_imgs/newrepo.JPG){fig-align="center"}
-
-## Let's Make a Project!
-
-::: {layout-ncol="2"}
-![](presentation_imgs/newrepo2.JPG)
-
-[ZULE's GitHub](https://github.com/zule-lab) has lots of repositories (including examples) if you are looking for inspiration for folder organization, ReadMe documentation, metadata, etc.
-:::
-
-## Cloning
-
-<div>
-
-![](presentation_imgs/cloning2.png)
-
-</div>
-
-# Part III: R & RStudio
+# Part II: R & RStudio
 
 ## Project Management in R
 
@@ -172,7 +127,76 @@ Principles:
 
 ![](presentation_imgs/filestructure.png)
 
-# Part IV: GitHub (Again)
+## Let's Make a Project
+
+-   Let's set up a new project, using RProjects
+
+-   Add input, output, script, and figure folders
+
+-   (I recommend you have a place on your computer dedicated to this)
+
+# Part II: GitHub
+
+## GitHub & Version Control
+
+![Piled Higher and Deeper](http://www.phdcomics.com/comics/archive/phd101212s.gif){fig-align="center"}
+
+## GitHub & Version Control
+
+::: incremental
+-   GitHub is a website-software that documents your progress on a project and allows you to do *version control*
+
+    -   aka it takes snapshots of your progress across time so nothing gets lost
+
+-   If you save rough drafts of your writing as you go along - that is version control
+
+-   Really useful for when you want to go back/change your mind/re-run a test/etc.
+
+-   Facilitates peace of mind + reproducible science + collaboration/sharing
+:::
+
+## Project Workflow with Git
+
+![biost\@ts Git Tutorial](https://biostats-r.github.io/biostats/github/Pics/gittutorial/0_workflow_git.png){fig-align="center"}
+
+## Project Workflow with Git + Others
+
+![biost\@ts Git Tutorial](https://biostats-r.github.io/biostats/github/Pics/gittutorial/22_workflow2.png){fig-align="center"}
+
+## The Basics of GitHub
+
+-   5 basic jargon terms you need to know to use GitHub:
+    -   Repository/repo: your project
+    -   Clone: make a local copy of your project
+    -   Commit: describe and commit to any changes you've made
+    -   Push: send your changes to your online repo
+    -   Pull: incorporate any changes to your local repo
+    -   (BONUS branch: a side project)
+-   *We will do all these things today!*
+
+## Let's Make a Repository!
+
+[github.com](www.github.com)
+
+![](presentation_imgs/newrepo.png){fig-align="center"}
+
+## Let's Make a Repository!
+
+::: {layout-ncol="2"}
+![](presentation_imgs/newrepo2.png)
+
+[ZULE's GitHub](https://github.com/zule-lab) has lots of repositories (including examples) if you are looking for inspiration for folder organization, ReadMe documentation, metadata, etc.
+:::
+
+## Let's Make a Repository! 
+
+## Cloning (Download An Existing Directory)
+
+<div>
+
+![](presentation_imgs/cloning2.png)
+
+</div>
 
 ## Committing
 
@@ -194,9 +218,9 @@ After committing, you push your changes to your remote repository
 
 -   If you are collaborating on a project, where multiple people are contributing, make sure you pull from the remote repository **before** starting your work
 
--    Same button as push (ctrl + shift + P)
+-   Same button as push (ctrl + shift + P)
 
-# Part V: Archiving Data
+# Part IV: Archiving Data
 
 ## Lab Archiving
 

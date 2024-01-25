@@ -4,7 +4,7 @@
     "href": "index.html#learning-goals",
     "title": "ZULE’s Data & GitHub Crash Course",
     "section": "Learning Goals",
-    "text": "Learning Goals\nMy goal for this workshop is to give everyone the tools to:\n\n\nConfidently start a project in R\nManage files in a way that is reproducible and easy to understand\nAllow people to document progress on their projects\nKnow one approach to publicly archiving projects"
+    "text": "Learning Goals\nMy goal for this workshop is to give everyone the tools to:\n\n\nConfidently start a project in R\nManage files in a way that is reproducible and easy to understand\nAllow people to document history/progress on their projects\nKnow one approach to publicly archiving projects"
   },
   {
     "objectID": "index.html#section",
@@ -21,60 +21,11 @@
     "text": "Software Installation\n\nCHECK-IN: does everyone have everything working/installed?\nAbsolutely the hardest part of this workshop\nThank you for doing homework!!\n\n\n\nIf you have technical issues throughout this presentation - raise your hand and we will either work through together or Kayleigh will help you troubleshoot"
   },
   {
-    "objectID": "index.html#project-workflow-with-git",
-    "href": "index.html#project-workflow-with-git",
+    "objectID": "index.html#transparent-workflows",
+    "href": "index.html#transparent-workflows",
     "title": "ZULE’s Data & GitHub Crash Course",
-    "section": "Project Workflow with Git",
-    "text": "Project Workflow with Git\n\nbiost@ts Git Tutorial"
-  },
-  {
-    "objectID": "index.html#project-workflow-with-git-others",
-    "href": "index.html#project-workflow-with-git-others",
-    "title": "ZULE’s Data & GitHub Crash Course",
-    "section": "Project Workflow with Git + Others",
-    "text": "Project Workflow with Git + Others\n\nbiost@ts Git Tutorial"
-  },
-  {
-    "objectID": "index.html#github-version-control",
-    "href": "index.html#github-version-control",
-    "title": "ZULE’s Data & GitHub Crash Course",
-    "section": "GitHub & Version Control",
-    "text": "GitHub & Version Control\n\nPiled Higher and Deeper"
-  },
-  {
-    "objectID": "index.html#github-version-control-1",
-    "href": "index.html#github-version-control-1",
-    "title": "ZULE’s Data & GitHub Crash Course",
-    "section": "GitHub & Version Control",
-    "text": "GitHub & Version Control\n\n\nGitHub is a website-software that documents your progress on a project and allows you to do version control\n\naka it takes snapshots of your progress across time so nothing gets lost\n\nIf you save rough drafts of your writing as you go along - that is version control\nReally useful for when you want to go back/change your mind/re-run a test/etc.\nFacilitates peace of mind + reproducible science + collaboration/sharing"
-  },
-  {
-    "objectID": "index.html#the-basics-of-github",
-    "href": "index.html#the-basics-of-github",
-    "title": "ZULE’s Data & GitHub Crash Course",
-    "section": "The Basics of GitHub",
-    "text": "The Basics of GitHub\n\n5 basic jargon terms you need to know to use GitHub:\n\nRepository/repo: your project\nClone: make a local copy of your project\nCommit: describe and commit to any changes you’ve made\nPush: send your changes to your online repo\nPull: incorporate any changes to your local repo\n(BONUS branch: a side project)\n\nWe will do all these things today!"
-  },
-  {
-    "objectID": "index.html#lets-make-a-project",
-    "href": "index.html#lets-make-a-project",
-    "title": "ZULE’s Data & GitHub Crash Course",
-    "section": "Let’s Make a Project!",
-    "text": "Let’s Make a Project!\ngithub.com"
-  },
-  {
-    "objectID": "index.html#lets-make-a-project-1",
-    "href": "index.html#lets-make-a-project-1",
-    "title": "ZULE’s Data & GitHub Crash Course",
-    "section": "Let’s Make a Project!",
-    "text": "Let’s Make a Project!\n\n\n\n\n\n\nZULE’s GitHub has lots of repositories (including examples) if you are looking for inspiration for folder organization, ReadMe documentation, metadata, etc."
-  },
-  {
-    "objectID": "index.html#cloning",
-    "href": "index.html#cloning",
-    "title": "ZULE’s Data & GitHub Crash Course",
-    "section": "Cloning",
-    "text": "Cloning"
+    "section": "Transparent Workflows",
+    "text": "Transparent Workflows\n\nEnsuring that your workflow is transparent is important for:\n\nPast/Current/Future You\nZULE Lab\nCollaborators\nOther grad students\nScientific Community\nPUBLIC"
   },
   {
     "objectID": "index.html#project-management-in-r",
@@ -117,6 +68,76 @@
     "title": "ZULE’s Data & GitHub Crash Course",
     "section": "Basic File Structure",
     "text": "Basic File Structure"
+  },
+  {
+    "objectID": "index.html#lets-make-a-project",
+    "href": "index.html#lets-make-a-project",
+    "title": "ZULE’s Data & GitHub Crash Course",
+    "section": "Let’s Make a Project",
+    "text": "Let’s Make a Project\n\nLet’s set up a new project, using RProjects\nAdd input, output, script, and figure folders\n(I recommend you have a place on your computer dedicated to this)"
+  },
+  {
+    "objectID": "index.html#github-version-control",
+    "href": "index.html#github-version-control",
+    "title": "ZULE’s Data & GitHub Crash Course",
+    "section": "GitHub & Version Control",
+    "text": "GitHub & Version Control\n\nPiled Higher and Deeper"
+  },
+  {
+    "objectID": "index.html#github-version-control-1",
+    "href": "index.html#github-version-control-1",
+    "title": "ZULE’s Data & GitHub Crash Course",
+    "section": "GitHub & Version Control",
+    "text": "GitHub & Version Control\n\n\nGitHub is a website-software that documents your progress on a project and allows you to do version control\n\naka it takes snapshots of your progress across time so nothing gets lost\n\nIf you save rough drafts of your writing as you go along - that is version control\nReally useful for when you want to go back/change your mind/re-run a test/etc.\nFacilitates peace of mind + reproducible science + collaboration/sharing"
+  },
+  {
+    "objectID": "index.html#project-workflow-with-git",
+    "href": "index.html#project-workflow-with-git",
+    "title": "ZULE’s Data & GitHub Crash Course",
+    "section": "Project Workflow with Git",
+    "text": "Project Workflow with Git\n\nbiost@ts Git Tutorial"
+  },
+  {
+    "objectID": "index.html#project-workflow-with-git-others",
+    "href": "index.html#project-workflow-with-git-others",
+    "title": "ZULE’s Data & GitHub Crash Course",
+    "section": "Project Workflow with Git + Others",
+    "text": "Project Workflow with Git + Others\n\nbiost@ts Git Tutorial"
+  },
+  {
+    "objectID": "index.html#the-basics-of-github",
+    "href": "index.html#the-basics-of-github",
+    "title": "ZULE’s Data & GitHub Crash Course",
+    "section": "The Basics of GitHub",
+    "text": "The Basics of GitHub\n\n5 basic jargon terms you need to know to use GitHub:\n\nRepository/repo: your project\nClone: make a local copy of your project\nCommit: describe and commit to any changes you’ve made\nPush: send your changes to your online repo\nPull: incorporate any changes to your local repo\n(BONUS branch: a side project)\n\nWe will do all these things today!"
+  },
+  {
+    "objectID": "index.html#lets-make-a-repository",
+    "href": "index.html#lets-make-a-repository",
+    "title": "ZULE’s Data & GitHub Crash Course",
+    "section": "Let’s Make a Repository!",
+    "text": "Let’s Make a Repository!\ngithub.com"
+  },
+  {
+    "objectID": "index.html#lets-make-a-repository-1",
+    "href": "index.html#lets-make-a-repository-1",
+    "title": "ZULE’s Data & GitHub Crash Course",
+    "section": "Let’s Make a Repository!",
+    "text": "Let’s Make a Repository!\n\n\n\n\n\n\nZULE’s GitHub has lots of repositories (including examples) if you are looking for inspiration for folder organization, ReadMe documentation, metadata, etc."
+  },
+  {
+    "objectID": "index.html#lets-make-a-repository-2",
+    "href": "index.html#lets-make-a-repository-2",
+    "title": "ZULE’s Data & GitHub Crash Course",
+    "section": "Let’s Make a Repository!",
+    "text": "Let’s Make a Repository!"
+  },
+  {
+    "objectID": "index.html#cloning-download-an-existing-directory",
+    "href": "index.html#cloning-download-an-existing-directory",
+    "title": "ZULE’s Data & GitHub Crash Course",
+    "section": "Cloning (Download An Existing Directory)",
+    "text": "Cloning (Download An Existing Directory)"
   },
   {
     "objectID": "index.html#committing",
